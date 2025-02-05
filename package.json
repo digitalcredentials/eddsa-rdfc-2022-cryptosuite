@@ -14,14 +14,13 @@
     "lib/**/*.js"
   ],
   "dependencies": {
-    "@digitalbazaar/ed25519-multikey": "^1.0.0",
+    "@digitalcredentials/ed25519-multikey": "file:../ed25519-multikey",
     "@digitalcredentials/jsonld": "^9.0.0",
     "@digitalcredentials/rdf-canonize": "^1.0.0"
   },
   "devDependencies": {
     "@digitalbazaar/data-integrity": "^2.0.0",
     "@digitalbazaar/data-integrity-context": "^2.0.0",
-    "@digitalbazaar/ed25519-multikey": "^1.0.0",
     "@digitalbazaar/ed25519-verification-key-2018": "^4.0.0",
     "@digitalbazaar/ed25519-verification-key-2020": "^4.1.0",
     "@digitalbazaar/multikey-context": "^2.0.1",

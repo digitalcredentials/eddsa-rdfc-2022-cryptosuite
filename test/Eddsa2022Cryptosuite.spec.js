@@ -6,7 +6,7 @@ import {expect} from 'chai';
 import jsigs from 'jsonld-signatures';
 const {purposes: {AssertionProofPurpose}} = jsigs;
 
-import * as Ed25519Multikey from '@digitalbazaar/ed25519-multikey';
+import * as Ed25519Multikey from '@digitalcredentials/ed25519-multikey';
 import {
   credential,
   ed25519MultikeyKeyPair

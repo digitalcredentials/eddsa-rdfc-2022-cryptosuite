@@ -1,7 +1,7 @@
 /*!
  * Copyright (c) 2023-2024 Digital Bazaar, Inc. All rights reserved.
  */
-import * as Ed25519Multikey from '@digitalbazaar/ed25519-multikey';
+import * as Ed25519Multikey from '@digitalcredentials/ed25519-multikey';
 import {cryptosuite} from '../lib/index.js';
 import {DataIntegrityProof} from '@digitalbazaar/data-integrity';
 import {expect} from 'chai';

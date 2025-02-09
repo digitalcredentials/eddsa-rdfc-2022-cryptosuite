@@ -1,10 +1,11 @@
-# EdDSA RDFC 2022 Data Integrity Cryptosuite _(@digitalbazaar/eddsa-rdfc-2022-cryptosuite)_
+# EdDSA RDFC 2022 Data Integrity Cryptosuite _(@digitalcredentials/eddsa-rdfc-2022-cryptosuite)_
 
-[![Build status](https://img.shields.io/github/actions/workflow/status/digitalbazaar/eddsa-rdfc-2022-cryptosuite/main.yml)](https://github.com/digitalbazaar/eddsa-rdfc-2022-cryptosuite/actions?query=workflow%3A%22Node.js+CI%22)
-[![Coverage status](https://img.shields.io/codecov/c/github/digitalbazaar/eddsa-rdfc-2022-cryptosuite)](https://codecov.io/gh/digitalbazaar/eddsa-rdfc-2022-cryptosuite)
-[![NPM Version](https://img.shields.io/npm/v/@digitalbazaar/eddsa-rdfc-2022-cryptosuite.svg)](https://npm.im/@digitalbazaar/eddsa-rdfc-2022-cryptosuite)
+[![Build status](https://img.shields.io/github/actions/workflow/status/digitalcredentials/eddsa-rdfc-2022-cryptosuite/main.yml)](https://github.com/digitalcredentials/eddsa-rdfc-2022-cryptosuite/actions?query=workflow%3A%22Node.js+CI%22)
+[![NPM Version](https://img.shields.io/npm/v/@digitalcredentials/eddsa-rdfc-2022-cryptosuite.svg)](https://npm.im/@digitalcredentials/eddsa-rdfc-2022-cryptosuite)
 
 > EdDSA 2022 Data Integrity Cryptosuite for use with jsonld-signatures.
+
+NOTE: this is a fork of [`@digitalbazaar/eddsa-rdfc-2022-cryptosuite`](https://github.com/digitalbazaar/eddsa-rdfc-2022-cryptosuite) to add support for react native. The only fundamental change is to replace the @digitalbazaar dependencies with @digitalcredential forks that use react native compatible cryptographic libraries when used in react native.
 
 ## Table of Contents
 
@@ -18,7 +19,7 @@
 
 ## Background
 
-For use with https://github.com/digitalbazaar/jsonld-signatures v11.0 and above.
+For use with https://github.com/digitalcredentials/jsonld-signatures v11.0 and above.
 
 See also related specs:
 
@@ -35,13 +36,13 @@ TBD
 To install from NPM:
 
 ```
-npm install @digitalbazaar/eddsa-rdfc-2022-cryptosuite
+npm install @digitalcredentials/eddsa-rdfc-2022-cryptosuite
 ```
 
 To install locally (for development):
 
 ```
-git clone https://github.com/digitalbazaar/eddsa-rdfc-2022-cryptosuite.git
+git clone https://github.com/digitalcredentials/eddsa-rdfc-2022-cryptosuite.git
 cd eddsa-rdfc-2022-cryptosuite
 npm install
 ```
@@ -52,11 +53,11 @@ The following code snippet provides a complete example of digitally signing
 a verifiable credential using this library:
 
 ```javascript
-import * as Ed25519Multikey from '@digitalbazaar/ed25519-multikey';
-import {DataIntegrityProof} from '@digitalbazaar/data-integrity';
+import * as Ed25519Multikey from '@digitalcredentials/ed25519-multikey';
+import {DataIntegrityProof} from '@digitalcredentials/data-integrity';
 import {cryptosuite as eddsaRdfc2022CryptoSuite} from
-  '@digitalbazaar/eddsa-rdfc-2022-cryptosuite';
-import jsigs from 'jsonld-signatures';
+  '@digitalcredentials/eddsa-rdfc-2022-cryptosuite';
+import jsigs from '@digitalcredentials/jsonld-signatures';
 const {purposes: {AssertionProofPurpose}} = jsigs;
 
 
@@ -152,18 +153,9 @@ const signedCredential = await jsigs.sign(unsignedCredential, {
 
 ## Contribute
 
-See [the contribute file](https://github.com/digitalbazaar/bedrock/blob/master/CONTRIBUTING.md)!
-
 PRs accepted.
 
 If editing the Readme, please conform to the
 [standard-readme](https://github.com/RichardLitt/standard-readme) specification.
 
-## Commercial Support
 
-Commercial support for this library is available upon request from
-Digital Bazaar: support@digitalbazaar.com
-
-## License
-
-[New BSD License (3-clause)](LICENSE) © 2023 Digital Bazaar

@@ -7,7 +7,7 @@
     "type": "git",
     "url": "https://github.com/digitalcredentials/eddsa-rdfc-2022-cryptosuite"
   },
-  "license": "BSD-3-Clause",
+  "license": "MIT",
   "type": "module",
   "exports": "./lib/index.js",
   "files": [

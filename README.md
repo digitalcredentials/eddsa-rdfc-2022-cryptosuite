@@ -14,7 +14,6 @@ NOTE: this is a fork of [`@digitalbazaar/eddsa-rdfc-2022-cryptosuite`](https://g
 - [Install](#install)
 - [Usage](#usage)
 - [Contribute](#contribute)
-- [Commercial Support](#commercial-support)
 - [License](#license)
 
 ## Background
@@ -158,4 +157,6 @@ PRs accepted.
 If editing the Readme, please conform to the
 [standard-readme](https://github.com/RichardLitt/standard-readme) specification.
 
+## License
 
+[MIT License](LICENSE.md) © 2025 Digital Credentials Consortium.

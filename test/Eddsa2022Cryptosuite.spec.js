@@ -11,13 +11,13 @@ import {
   credential,
   ed25519MultikeyKeyPair
 } from './mock-data.js';
-import {DataIntegrityProof} from '@digitalcredentials/data-integrity';
+import {DataIntegrityProof} from '@digitalbazaar/data-integrity';
 import {
   Ed25519VerificationKey2018
-} from '@digitalcredentials/ed25519-verification-key-2018';
+} from '@digitalbazaar/ed25519-verification-key-2018';
 import {
   Ed25519VerificationKey2020
-} from '@digitalcredentials/ed25519-verification-key-2020';
+} from '@digitalbazaar/ed25519-verification-key-2020';
 import {
   cryptosuite as eddsa2022CryptoSuite
 } from '../lib/index.js';

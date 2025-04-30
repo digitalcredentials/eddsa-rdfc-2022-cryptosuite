@@ -1,5 +1,10 @@
 # @digitalbazaar/eddsa-rdfc-2022-cryptosuite Changelog
 
+## 1.3.0 - 2025-04-30
+
+### Added
+- Add support for react native by switching @digitalbazaar dependencies to @digitalcredential forks
+
 ## 1.2.0 - 2024-11-25
 
 ### Added

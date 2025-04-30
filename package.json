@@ -1,6 +1,6 @@
 {
   "name": "@digitalcredentials/eddsa-rdfc-2022-cryptosuite",
-  "version": "1.3.0-beta.1",
+  "version": "1.3.0",
   "description": "An EdDSA-RDFC-2022 Data Integrity cryptosuite for use with jsonld-signatures.",
   "homepage": "https://github.com/digitalcredentials/eddsa-rdfc-2022-cryptosuite",
   "repository": {
@@ -14,7 +14,7 @@
     "lib/**/*.js"
   ],
   "dependencies": {
-    "@digitalcredentials/ed25519-multikey": "^1.4.0-beta.1",
+    "@digitalcredentials/ed25519-multikey": "^1.4.0",
     "@digitalcredentials/jsonld": "^9.0.0",
     "rdf-canonize": "^4.0.1"
   },
